@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ,<script src="js/form.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+  
+<div style="display:flex;justify-content: space-evenly;">
+    <div style="border: 2px solid black;padding: 20px;" id="divTag"  >
+        <form id="form" onsubmit="fun(event)" method="post">
+        
+            <h1 style="border: 2px solid black;text-align: center;padding: 20px;">Login Form</h1>
+            <p>Name <input type="text" placeholder="FirstName" id="fname" name="firstname" required ><span> </span><input name="lastName" id="lname" type="text" required placeholder="LastName" ></p>
+            <p>Email <input type="email" name="email" id="email" placeholder="Email" required ></p>
+            <p>Phone Number <input type="text" id="phone" name="phone" id="" placeholder="10-digit Number" required></p>
+            <p>Pasword <input type="password" id="pass" name="password" id="" placeholder="Password" required ></p>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="gender" value="Male">Male<br>
+            <input type="radio" name="gender" id="gender" value="Female">Female<br>
+            <input type="radio" name="gender" id="gender" value="Not wish to disclose">Not wish to disclose<br>
+            <p></p>
+            <label>Adresss</label><br>
+            <textarea name="address" cols="30" rows="4" id="address" ></textarea>
+            <p></p>
+            <label for="">Date Of Birth</label><br>
+            <input type="date" name="date" id="date" required>
+            <p></p>
+            <label for="">Time</label><br>
+            <input type="time" name="time" id="time" required>
+            <p></p>
+            <label for="">Languages</label><br>
+            <input type="checkbox" name="lang" value="Tamil">Tamil<br>
+            <input type="checkbox" name="lang"  value="English">English<br>
+            <input type="checkbox" name="lang"  value="French">French<br>
+            <p></p>
+            <label for="">Select Your Field of Interest :</label><br>
+            <select name="select" id="selected" multiple required>
+                <option value="Music">Music</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Badmiton">Badmiton</option>
+            </select>
+            <p></p>
+            <label for="">Upload your Photo</label><br>
+            <input type="file" name="" id="">
+            <p><input type="submit" value="submit"><span> </span><input type="reset"></p>
+       
+    </form>
+</div>
+    <div id="div2" style="display:none;">
+    <h1 style="text-align: center;">OUTPUT SCREEN</h1>
+    <table border="3" style="margin: auto;">
+        <tr>
+            <th>SECTION</th>
+            <th>USER DETAILS</th>
+        </tr>
+        <tr>
+            <th>USERNAME</th>
+            <td id="firstname">Bala</td>
+        </tr>
+        <tr>
+            <th>EMAIL ID</th>
+            <td id="emailId">balabaskar@gmail.com</td>
+        </tr>
+        <tr>
+            <th>PHONE NUMBER</th>
+            <td id="phoneno">9150198636</td>
+        </tr>
+        <tr>
+            <th>PASSWORD</th>
+            <td id="password">*************</td>
+        </tr>
+        <tr>
+            <th>GENDER</th>
+            <td id="gen">MALE</td>
+        </tr>
+        <tr>
+            <th>CURRENT ADDRESS</th>
+            <td id="add">4th street,sriram nagar,Taramani,chennai</td>
+        </tr>
+        <tr>
+            <th>DATE OF BIRTH</th>
+            <td id="datee">17/02/2002</td>
+        </tr>
+        <tr>
+            <th>TIME</th>
+            <td id="timee"></td>
+        </tr>
+        <tr>
+            <th>LANGUAGES</th>
+            <td>
+                <ul id="langauge">
+
+                </ul>
+                
+            </td>
+        </tr>
+        <tr>
+            <th>FIELD OF INTEREST</th>
+            <td>
+                <ul id="selecte">
+                    
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>UPLOAD YOUR PICTURE</th>
+            <!-- <td><img src="images/tomato.jpg" width="100px" height="100px" alt=""></td> -->
+        </tr>
+     </table>
+   </div>
+</div>
+
+</body>
+</html>
